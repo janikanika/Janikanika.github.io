@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
 .container {
     position: relative;
     width: 1140px;
@@ -78,7 +82,7 @@ h2.title {
     font-weight: 700;
 }
 
-.promo .promo_btn {
+.promo .promo_btn, .gift .gift_btn {
     display: block;
     /* margin: 73px auto; */
     margin: 0 auto;
@@ -124,7 +128,7 @@ h2.title {
     padding: 85px 0 75px 0;
 }
 
-.waiting .waiting_header, .finish .finish_header {
+.waiting .waiting_header, .finish .finish_header, .waiting .waiting_header {
     color: #252525;
     font-family: Roboto;
     font-size: 30px;
@@ -135,6 +139,10 @@ h2.title {
 
 .finish .finish_header{
     color: #ffffff;
+}
+
+.waiting .waiting_header{
+    color: #252525;
 }
 
 .waiting .waiting_divider, .finish .finish_divider {
@@ -160,21 +168,14 @@ h2.title {
     margin-top: 45px;
 }
 
- 
-
-.waiting .waiting_wrapper .waiting_item {
-    
+.waiting .waiting_wrapper .waiting_item {    
     width: 339px;
     text-align: center;
 }
 
- 
-
 .waiting .waiting_wrapper .waiting_item .waiting_img {
     width: 100%
 }
-
- 
 
 .waiting .waiting_wrapper .waiting_item .waiting_descr {
     margin-top: 33px;
@@ -182,8 +183,7 @@ h2.title {
     font-family: Roboto;
     font-size: 15px;
     font-weight: 300;
-    line-height: 21px;
-    
+    line-height: 21px; 
 }
 
 .optimization {
@@ -256,4 +256,101 @@ h2.title {
     font-size: 17px;
     font-weight: 300;
     line-height: 20px;
+
+}
+
+.gift {
+    min-height: 200px;
+    background-color: #EFEFEF;
+    padding: 10px 0;
+
+}
+
+.gift .gift_img {
+    display: block;
+    margin: 40px auto;
+}
+
+.gift .gift_text {
+    margin-top: 25px;
+    color: #4a4a4a;
+    /* font-family: "Roboto Light"; */
+    font-size: 17px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.gift .gift_btn {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.webinar {
+    min-height: 400px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.webinar .webinar_img {
+    display: block;
+    margin: 40px auto;
+}
+
+.webinar .webinar_header {
+    margin-top: -15px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.webinar .webinar_data {
+    margin-top: 15px;
+    /* font-family: Roboto; */
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #299CBD;
+    
+}
+
+.webinar .webinar_text {
+    margin-top: 15px;
+    /*font-family: Roboto; */
+    font-style: normal;
+    font-weight: normal;
+    font-size: 23px;
+    text-align: center;
+    color: #4a4a4a;
+}
+
+footer{
+    height: 169px;
+    background: #1A1A1A;
+}
+
+footer .footer_wrap {
+
+    display: flex;
+    justify-content: center;
+}
+
+footer .footer_link, footer .footer_text, footer .footer_link_divider {
+    margin-top: 70px;
+    /* font-family: Roboto; */
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    text-align: center;
+    color: #888888;
+}
+
+footer .footer_text {
+    margin-top: 0
+}
+
+footer .footer_link_divider {
+    margin-left: 5px;
+    margin-right: 5px;
+    font-weight: 800;
 }
